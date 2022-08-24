@@ -1,0 +1,216 @@
+<!DOCTYPE html> <!--Especifica al navegador que este documento está escrito en HTML 5.-->
+<html lang="es"> <!--Especifica el idioma de la página web, en este caso, español.-->
+<head>
+    <meta charset="UTF-8"> <!--Especifica la codificación de la página, nos servirá para poder incluir caracteres del idioma, como tildes, por ejemplo.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adapta la página a diferentes tipos de pantalla.-->
+    <meta name="author" content="Carlos Arturo Murcia Andrade"> <!--Metadato, especifica el nombre del autor.-->
+    <link href="styles.css" rel="stylesheet" type="text/css"> <!--Enlace a los estilos CSS.-->
+    <link href="images\star_wars_index_icon.png" rel="icon"> <!--Enlace al ícono de la página web.-->
+    <title>Star Wars Interactivo: Personajes.</title> <!--Titulo de la página web.-->
+</head>
+<body>
+    <div>
+        <header> <!--Sección que encapsula el encabezado. En pocas palabras, el título y la barra de navegación.-->
+            <a href="index.html" target="_self"><h1>Star Wars Interactivo: <br> Info sobre una galaxia muy, muy lejana.</h1></a><br> <!--Titulo de la página web, visible para el usuario.-->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <a href="ubicacion.html" target="_self" class="button">Ubicación</a>
+            <a href="personajes.html" target="_self" class="button">Personajes</a>
+            <a href="actividades.html" target="_self" class="button">Actividades</a>
+            <a href="historia.html" target="_self" class="button">Historia</a>
+            <a href="mapainteractivo.html" target="_self" class="button">Mapa</a>
+        </header>
+        <main> <!--Encapsula el contenido principal de la sección-->
+            <h2 class="dummy_spacer">Historia</h2> <!--Subtitulo h2.--> 
+            <nav class="page_index"> <!--Encapsula el menú de navigación interno.-->
+                <h5 class="index_contents">Contenidos</h5> <!--Subtitulo h5.--> 
+                <ul class="internal_nav"> <!--Lista que contiene el menú de navegación interno.-->
+                    <li><a href="#ep1" target="_self" class="internal_list">Episodio I</a></li>
+                    <li><a href="#ep2" target="_self" class="internal_list">Episodio II</a></li>
+                    <li><a href="#ep3" target="_self" class="internal_list">Episodio III</a></li>
+                    <li><a href="#ep4" target="_self" class="internal_list">Episodio IV</a></li>
+                    <li><a href="#ep5" target="_self" class="internal_list">Episodio V</a></li>
+                    <li><a href="#ep6" target="_self" class="internal_list">Episodio VI</a></li>
+                </ul>
+            </nav>         
+            <figure> <!--Figura con pie de foto.-->
+                <img src="images\timeline.png" alt="Cronología galáctica" id="chrono_img">
+                <figcaption>Cronología galáctica.</figcaption>
+            </figure> 
+            <h3 id="ep1">Episodio I - La Amenaza Fantasma</h3> <!--Subtitulo h3.-->
+            <figure class="column"> <!--Figura con pie de foto.-->
+                <img src="images\sw_ep_i.png" alt="Episodio I" class="other_img">
+                <figcaption>Episodio I.</figcaption>
+            </figure>
+            <p class="content"> <!--Parrafo con contenido.-->
+                Comienzan los disturbios en la República Galáctica debido a protestas contra la tributación de las rutas comerciales a los sistemas estelares, y a un naciente movimiento separatista.
+                <br>
+                La Federación de Comercio ha detenido todos los envíos al planeta de Naboo, dirigido por la reina Padmé Amidala, aliada del senador Palpatine.
+                <br>
+                El Jedi Qui-Gon Ginn y su Padawan, Obi-Wan Kenobi, protegen a la joven reina Amidala, quien escapa de una invasión a su planeta, con la intención de llegar al Senado y plantear su caso.
+                <br>
+                Durante esta aventura, en el planeta Tatooine, el grupo conoce a un niño esclavo llamado Anakin Skywalker, quien cumple las características para ser un ser que, de acuerdo con una antigua profecía, traerá equilibrio a la Galaxia.
+                <br>
+                Qui-Gon Jinn libera a Anakin de sus cadenas y se propone a entrenarlo como Jedi; el pequeño debe separarse de su madre, quien permanece como esclava en Tatooine.
+                <br>
+                Durante la batalla para liberar a Naboo de la ocupación ilegal, el Sith Darth Maul asesina a Qui-Gon Jinn, pero posteriormente es vencido por Obi-Wan Kenobi.
+                <br>
+                Anakin es puesto al cuidado de Obi-Wan Kenobi y Naboo es liberado; no cesan los conflictos entre la República y los separatistas.
+            </p>
+            <h3 id="ep2">Episodio II - El Ataque de los Clones</h3> <!--Subtitulo h3.-->
+            <figure class="column"> <!--Figura con pie de foto.-->
+                <img src="images\sw_ep_ii.png" alt="Episodio II" class="other_img">
+                <figcaption>Episodio II.</figcaption>
+            </figure>
+            <p class="content"> <!--Parrafo con contenido.-->
+                Han pasado 10 años; Anakin es ahora un joven adulto y Padmé Amidala dejó de ser reina para convertirse en senadora.
+                <br>
+                Miles de sistemas solares han declarado sus intenciones de abandonar la República, lo que crea tensión en el Senado Galáctico, situación que ha dado fuerza al movimiento separatista, liderado por el misterioso Conde Dooku.
+                <br>
+                El limitado número de Caballeros Jedi no tiene la fuerza ni los recursos suficientes para garantizar el orden y la paz en la galaxia.
+                <br>
+                Los legisladores deberán votar la posibilidad de crear un Ejército de la República, cuyo fin será ayudar en sus actividades de vigilancia y seguridad a los Jedi.
+                <br>
+                Al llegar al Senado, Padmé Amidala es víctima de un atentado terrorista, y aunque sobrevive, el temor por su bienestar lleva a asignar a Anakin Skywalker a su cuidado; los dos jóvenes empiezan a enamorarse.
+                <br>
+                Anakin vuelve a su planeta natal con la esperanza de encontrarse con su madre; allí descubre que ésta fue secuestrada por una tribu de salvajes.
+                <br>
+                Anakin se lanza al rescate de su madre, quien muere en brazos del joven Jedi, víctima de los maltratos y torturas a los que fue sometida.
+                <br>
+                Furioso, Anakin acaba con todos los integrantes de la mencionada tribu, iniciando su camino hacia el Lado Oscuro de la Fuerza.
+                <br>
+                Mientras tanto, Obi-Wan Kenobi, el maestro de Anakin, descubre que la República ya trabaja en la creación de un ejército de clones (stormtroopers) para garantizar la seguridad.
+                <br>
+                Al final de la película, Obi-Wan y Anakin se lanzan por la cabeza del Conde Dooku, pero se ven superados en número; pronto llegan los refuerzos: los integrantes del recién integrado Ejército de la República y Yoda, uno de los líderes Jedi.
+                <br>
+                Dooku escapa y la Galaxia entra en una guerra total, y Anakin y Padmé se casan en secreto.
+            </p>
+            <h3 id="ep3">Episodio III - La Venganza de los Sith</h3> <!--Subtitulo h3.-->
+            <figure class="column"> <!--Figura con pie de foto.-->
+                <img src="images\sw_ep_iii.png" alt="Episodio III" class="other_img">
+                <figcaption>Episodio III.</figcaption>
+            </figure>
+            <p class="content"> <!--Parrafo con contenido.-->
+                Los ataques y atentados del Conde Dooku y los separatistas no paran; uno de sus mejores elementos, el líder droide general Grievous, entra a la capital de la República y secuestra al ahora Canciller Supremo Palpatine, líder del Senado, por lo que Obi-Wan Kenobi y Anakin Skywalker dirigen una misión para rescatarle.
+                <br>
+                Durante el operativo, Anakin asesina a sangre fría al Conde Dooku, y se vuelve cercano al Canciller Palpatine, quien durante toda la película insta al joven Jedi a unirse al Lado Oscuro.
+                <br>
+                Padmé está embarazada, y Anakin se preocupa por su bienestar; debido a que también considera que la República no protege a las víctimas de abusos, como lo fue su madre, el muchacho termina por convencerse de que el sistema democrático está rebasado.
+                <br>
+                Palpatine se revela como el Sith Darth Sidious, y los Jedi intentan detenerlo, sin embargo, son traicionados por Anakin, quien se une al lado oscuro.
+                <br>
+                Darth Sidious aprovecha su poder como líder de la República y ordena al Ejército asesinar a todos los Jedi, incluidos los niños que eran entrenados (de los que Anakin se encarga personalmente) para acabar con el linaje del lado luminoso de la Fuerza.
+                <br>
+                Vuelto loco, Anakin hiere mortalmente a su amada Padmé y se enfrenta a quien fuera su maestro, Obi-Wan.
+                <br>
+                Obi-Wan Kenobi vence a Anakin y tras darlo por muerto, lo abandona a su suerte en un río de lava; Darth Sidious busca a su nuevo alumno, lo salva y lo convierte en el temible Darth Vader.
+                <br>
+                Padmé muere dando a luz a dos gemelos, Leia y Luke, quienes son separados: la niña es puesta al cuidado del senador Bail Organa, y Luke es enviado con un hermano de Obi-Wan Kenobi, Owen Kenobi.
+                <br>
+                Los Sith triunfan, la República cae, y surge el Imperio Galáctico.
+            </p>
+            <h3 id="ep4">Episodio IV - Una Nueva Esperanza</h3> <!--Subtitulo h3.-->
+            <figure class="column"> <!--Figura con pie de foto.-->
+                <img src="images\sw_ep_iv.png" alt="Episodio IV" class="other_img">
+                <figcaption>Episodio IV.</figcaption>
+            </figure>
+            <p class="content"> <!--Parrafo con contenido.-->
+                Han pasado 19 años. 
+                <br>
+                Durante la Guerra Civil para acabar con el Imperio, naves rebeldes han atacado una base secreta y espías se hacen de los planos con los que se construye el arma más poderosa del gobierno galáctico: La Estrella de la Muerte, estación espacial cuyo armamento cuenta con la capacidad para destruir un planeta completo.
+                <br>
+                Los planos se encuentran en poder de la princesa Leia Organa, quien se dirige a casa en su nave, pero es interceptada por Darth Vader y los agentes del Imperio; antes de concretarse su secuestro, la heroína deposita los archivos en uno de sus robots, R2D2, que es lanzado al vacío junto a un androide, C3PO.
+                <br>
+                Las dos máquinas caen en el planeta de Tatooine, en el que reside Luke Skywalker, cuya familia compra los robots.
+                <br>
+                Cuando Luke está a punto de borrar la memoria de las máquinas, R2D2 reproduce un holograma en el que Leia pide ayuda a Obi-Wan Kenobi, el último cabellero Jedi del que se tiene conocimiento.
+                <br>
+                Luke está seguro que Obi-Wan Kenobi es un hermitaño que vive cerca, y se lanza a buscarlo; durante el trayecto, el héroe es atacado y rescatado por Obi-Wan.
+                <br>
+                Obi-Wan le cuenta a Luke que su padre fue asesinado por Darth Vader.
+                <br>
+                Cuando Luke regresa a casa, se entera de que los agentes del Imperio, que buscan a los robots de Leia, han destruido su hogar y asesinado a su familia. En busca de justicia, Luke accede a unirse a una misión para rescatar a la princesa.
+                <br>
+                Durante el desarrollo de la historia, Luke, Obi-Wan, R2D2 y C3PO conocen a Han Solo y Chewbacca, un par de contrabandistas que viajan a bordo de una nave conocida como el Halcón Milenario.
+                <br>
+                El grupo logra llegar a la nave de Darth Vader.
+                <br>
+                Darth Vader pelea con su antiguo maestro, Obi Wan-Kenobi, y lo asesina; el resto de los héroes escapa y se reúne con la Alianza Rebelde.
+                <br>
+                Tras acceder a los planos de la Estrella de la Muerte, los rebeldes montan un plan para acabar con esta instalación, conscientes de que, si no lo hacen, su muerte es segura.
+                <br>
+                Han Solo y Chewbacca se niegan a colaborar, pero terminan formando parte del plan.
+                <br>
+                Luke utiliza su habilidad para volar naves, y la Fuerza que reside en él, y destruye la Estrella de la Muerte.
+                <br>
+                Luke y Han Solo son reconocidos como héroes rebeldes en una ceremonia pública.
+                <br>
+                Darth Vader desconoce que sus nuevos mortales enemigos, Luke y Leia, son sus propios hijos.
+            </p>
+            <h3 id="ep5">Episodio V - El Imperio Contraataca</h3> <!--Subtitulo h3.-->
+            <figure class="column"> <!--Figura con pie de foto.-->
+                <img src="images\sw_ep_v.png" alt="Episodio V" class="other_img">
+                <figcaption>Episodio V.</figcaption>
+            </figure>
+            <p class="content"> <!--Parrafo con contenido.-->
+                A pesar de que la Estrella de la Muerte fue destruida, el poder del Imperio sigue siendo tal que obligó a los miembros de la Alianza Rebelde a dejar sus bases secretas, y persigue a sus detractores a través de la Galaxía.
+                <br>
+                Liderados por Luke Skywalker, un grupo de guerreros establece un escondite en la tierra congelada de Hoth.
+                <br>
+                Darth Vader, obsesionado con encontrar a sus enemigos, en especial a Luke, envía miles de sondas a control remoto al lejano espacio.
+                <br>
+                El Imperio encuentra la base de Luke y la ataca; los héroes se dividen.
+                <br>
+                Leia y Han Solo buscan a un antiguo aliado, Lando Calrissian, y Luke se presenta ante el legendario maestro Jedi Yoda, para completar su entrenamiento hacia el lado luminoso de la luz.
+                <br>
+                Leia y Han Solo dan con Lando, pero éste los traiciona y los entrega al Imperio.
+                <br>
+                Han Solo es congelado en carbonita.
+                <br>
+                Luke se enfrenta a Darth Vader, quien le corta una mano al héroe y le hace una gran revelación: "Yo soy tu padre".
+                <br>
+                Luke escapa y se reúne con Leia; congelado, Han Solo es entregado al criminal Jabba The Hutt, con quien mantenía una deuda.
+            </p>
+            <h3 id="ep6">Episodio VI - El Retorno del Jedi</h3> <!--Subtitulo h3.-->
+            <figure class="column"> <!--Figura con pie de foto.-->
+                <img src="images\sw_ep_vi.png" alt="Episodio VI" class="other_img">
+                <figcaption>Episodio VI.</figcaption>
+            </figure>
+            <p class="content"> <!--Parrafo con contenido.-->
+                Congelado, Han Solo es llevado a Tatooine, el planeta natal de Luke, quien llega hasta ese sitio con la esperanza de salvar a su amigo.
+                <br>
+                Lo que los héroes desconocen es que el Imperio ha iniciado la construcción de una base más grande y poderosa que la original Estrella de la Muerte.
+                <br>
+                Leia encabeza un primer intento para rescatar a Han Solo, pero es secuestrada por Jabba The Hut y obligada a servir como esclava; sin embargo, en una batalla en la que tiene que hacer frente al Mandaloriano Bobba Fett, Luke pone a salvo a sus aliados.
+                <br>
+                Jabba es asesinado por Leia.
+                <br>
+                La Alianza Rebelde descubre que el Imperio construye una segunda Estrella de la Muerte, que es protegida por un campo de fuerza que se genera desde un planeta llamado Endor.
+                <br>
+                Luke finge su rendición ante el Imperio para poder ser presentado ante Darth Vader y derrotarlo más tarde, pero antes le confiesa a Leia que es su hermano.
+                <br>
+                Apoyados por una raza de héroes conocida como Ewooks, los rebeldes destruyen el escudo que protege la nueva Estrella de la Muerte.
+                <br>
+                Luke vence a Darth Vader en batalla y el Emperador Darth Sidious le pide que se convierta en su nuevo aprendiz; como el héroe se niega, el villano trata de matarlo.
+                <br>
+                Darth Vader defiende a Luke y mata a Darth Sidious.
+                <br>
+                Las heridas de Darth Vader lo llevan a la muerte, Luke se lleva su cuerpo y lo incinera. La Estrella de la Muerte es destruida.
+                <br>
+                En todos los planetas se celebra la caída del Imperio.
+            </p>
+        </main>
+        <footer> <!--Muestra los datos del creador y enlaza a los creditos.-->
+            <p id="footer">
+                © Carlos Arturo Murcia Andrade - Universidad Nacional de Colombia - 2021
+                <br>
+                Contacto: 
+                <a href="mailto:camurcioa@unal.edu.co" target="_blank" class="credits_list">Email</a> / 
+                <a href="https://wa.me/573124308915" target="_blank" class="credits_list">WhatsApp</a>            
+                <br>
+                <a href="creditos.html" target="_self" class="credits_list">Créditos</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

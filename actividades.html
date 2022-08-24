@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!--Especifica al navegador que este documento está escrito en HTML 5.-->
+<html lang="es"> <!--Especifica el idioma de la página web, en este caso, español.-->
+<head>
+    <meta charset="UTF-8"> <!--Especifica la codificación de la página, nos servirá para poder incluir caracteres del idioma, como tildes, por ejemplo.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adapta la página a diferentes tipos de pantalla.-->
+    <meta name="author" content="Carlos Arturo Murcia Andrade"> <!--Metadato, especifica el nombre del autor.-->
+    <link href="styles.css" rel="stylesheet" type="text/css"> <!--Enlace a los estilos CSS.-->
+    <link href="images\star_wars_index_icon.png" rel="icon"> <!--Enlace al ícono de la página web.-->
+    <title>Star Wars Interactivo: Personajes.</title> <!--Titulo de la página web.-->
+</head>
+<body>
+    <div>
+        <header> <!--Sección que encapsula el encabezado. En pocas palabras, el título y la barra de navegación.-->
+            <a href="index.html" target="_self"><h1>Star Wars Interactivo: <br> Info sobre una galaxia muy, muy lejana.</h1></a><br> <!--Titulo de la página web, visible para el usuario.-->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <a href="ubicacion.html" target="_self" class="button">Ubicación</a>
+            <a href="personajes.html" target="_self" class="button">Personajes</a>
+            <a href="actividades.html" target="_self" class="button">Actividades</a>
+            <a href="historia.html" target="_self" class="button">Historia</a>
+            <a href="mapainteractivo.html" target="_self" class="button">Mapa</a>
+        </header>
+        <main> <!--Encapsula el contenido principal de la sección-->
+            <h2 class="dummy_spacer">Actividades</h2> <!--Subtitulo h2.-->
+            <nav class="page_index"> <!--Encapsula el menú de navigación interno.-->
+                <h5 class="index_contents">Contenidos</h5> <!--Subtitulo h5.--> 
+                <ul class="internal_nav"> <!--Lista que contiene el menú de navegación interno.-->
+                    <li><a href="#duel" target="_self" class="internal_list">Duelos con sables de luz</a></li>
+                    <li><a href="#space_travel" target="_self" class="internal_list">Viaje espacial</a></li>
+                    <li><a href="#sabacc" target="_self" class="internal_list">Sabacc</a></li>
+                    <li><a href="#meditation" target="_self" class="internal_list">Meditación</a></li>
+                    <li><a href="#pod_racing" target="_self" class="internal_list">Carreras de Pods</a></li>
+                </ul>
+            </nav>
+            <h3 id="duel">Duelos con sables de luz</h3> <!--Subtitulo h3.-->
+            <figure> <!--Figura con pie de foto.-->
+                <img src="images\duel.png" alt="Duelo con sable de luz" class="other_img">
+                <figcaption>Un duelo con sable de luz.</figcaption>
+            </figure> 
+            <p class="content"> <!--Parrafo con contenido.-->
+                El Combate con sable de luz ocurría cuando dos o más oponentes que usaban sables de luz se enfrentaron en un duelo de sables de luz. 
+                Tales oponentes eran a menudo, aunque no siempre, Sith y Jedi. 
+                Aunque el combate con sables de luz decidía los resultados de algunos conflictos importantes en toda la galaxia, a menudo cuando dos oponentes sensibles a la Fuerza eran casi iguales, tenían que recurrir a otros medios para resolver el conflicto, como recurrir a otros poderes de la Fuerza. 
+                Había siete formas conocidas de combate con sables de luz: Forma I, Forma II, Forma III, Forma IV, Forma V, Forma VI y Forma VII.
+            </p>
+            <h3 id="space_travel">Viaje espacial</h3> <!--Subtitulo h3.-->
+            <figure> <!--Figura con pie de foto.-->
+                <img src="images\hyperspace.png" alt="Viaje a la velocidad de la luz" class="other_img">
+                <figcaption>Viaje a la velocidad de la luz.</figcaption>
+            </figure> 
+            <p class="content"> <!--Parrafo con contenido.-->
+                Se llama viaje interestelar a un viaje tripulado o no tripulado entre estrellas. 
+                Este es un concepto básico dentro de la ciencia ficción, pero en la práctica, el viaje interestelar es mucho más difícil que el viaje interplanetario debido a que las distancias implicadas son enormemente mayores (del orden del año luz). 
+                Por la misma razón el viaje intergaláctico es aún más complicado.
+            </p>
+            <h3 id="sabacc">Sabacc</h3> <!--Subtitulo h3.-->
+            <figure> <!--Figura con pie de foto.-->
+                <img src="images\sabacc.png" alt="Juego de Sabacc" class="other_img">
+                <figcaption>Juego de Sabacc.</figcaption>
+            </figure> 
+            <p class="content"> <!--Parrafo con contenido.-->
+                El Sabacc era un juego de cartas jugado en la galaxia. 
+                Una baraja de sabacc comprendía una serie de cartas de figuras (incluyendo el Idiota, la Reina, el Malvado y la Estrella) y cuatro palos de quince cartas de pepita (Frascos, Sables, Bastoncillos y Monedas). 
+                El valor nominal de las cartas cambiaba al azar en el juego, pero se bloqueaba tan pronto como las cartas se colocaban en el campo de suspensión especial de la tabla de sabacc. 
+                Esa particularidad hizo del sabacc un juego complejo e impredecible, ya que una posible mano ganadora podía convertirse en una perdedora si no se utiliza en el momento adecuado.
+            </p>
+            <h3 id="meditation">Meditación</h3> <!--Subtitulo h3.-->
+            <figure> <!--Figura con pie de foto.-->
+                <img src="images\meditation.png" alt="Meditacion" class="other_img">
+                <figcaption>Baby Yoda Meditando.</figcaption>
+            </figure> 
+            <p class="content"> <!--Parrafo con contenido.-->
+                La Meditación era una técnica mental realizada por los seres vivos. 
+                Al meditar, los sensibles a la Fuerza podían alcanzar un estado más profundo de relajación, facilitando la conexión con la Fuerza con una mente clara.
+            </p>
+            <h3 id="pod_racing">Carreras de Pods</h3> <!--Subtitulo h3.-->
+            <figure> <!--Figura con pie de foto.-->
+                <img src="images\podracing.png" alt="Carreras de Pods" class="other_img">
+                <figcaption>Grilla de partida previa a la carrera.</figcaption>
+            </figure> 
+            <p class="content"> <!--Parrafo con contenido.-->
+                Las carreras de pods era un deporte de carreras peligroso que se llevaba a cabo en planetas como Malastare, Theron, Cantonica y Tatooine. 
+                Los corredores podrían realizar múltiples vueltas en una pista de carreras en particular, moviéndose a velocidades peligrosas y, a veces, mortales.
+            </p>
+        </main>
+        <footer> <!--Muestra los datos del creador y enlaza a los creditos.-->
+            <p id="footer">
+                © Carlos Arturo Murcia Andrade - Universidad Nacional de Colombia - 2021
+                <br>
+                Contacto: 
+                <a href="mailto:camurcioa@unal.edu.co" target="_blank" class="credits_list">Email</a> / 
+                <a href="https://wa.me/573124308915" target="_blank" class="credits_list">WhatsApp</a>            
+                <br>
+                <a href="creditos.html" target="_self" class="credits_list">Créditos</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

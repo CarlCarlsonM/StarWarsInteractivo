@@ -1,0 +1,453 @@
+@font-face 
+{ /* Fuente de texto externa usado en el header, el footer, y los titulos.*/
+    font-family:  PressStart2P; /* Nombre de la fuente.*/
+    src: url("fonts/PressStart2P.ttf"); /* Ubicación en la carpeta fonts.*/
+}
+
+@font-face 
+{ /* Fuente de texto externa usado en los parrafos.*/
+    font-family:  Galaxy1; /* Nombre de la fuente.*/
+    src: url("fonts/Galaxy1.ttf"); /* Ubicación en la carpeta fonts.*/
+}
+
+* 
+{ /*Permite generar estilos de caja.*/
+    box-sizing: border-box;
+}
+
+html, body 
+{ /*Estilos generales para el html completo.*/
+    background-image: url("images/background_page.png"); /*Link a la imágen de fondo.*/
+    background-color: black; /*Color de fondo por si la imagén de fondo no está disponible.*/
+    background-size: cover; /*Establece la imágen de fondo*/
+    font-family: PressStart2P; /*Establece la fuente por defecto para todo el documento*/
+    color: white; /*Establece el color de texto por defecto para todo el documento.*/
+    text-align: justify; /*Esablece la orientación del texto para todo el documento (justificado).*/
+}
+
+div 
+{ /*Estilos para el div exterior, que es el que encapsula todo el contenido de la página.*/
+    /*Se hacen estos estilos por separado porque así se puede agregar la "telilla" de fondo.*/
+    margin-left: 3%; /*Establece la separación de la "telilla transparentosa" respecto de la izquierda.*/
+    margin-right: 3%; /*Establece la separación de la "telilla transparentosa" respecto de la izquierda.*/
+    padding: 1%; /*Establece el borde interno.*/
+    background-color: rgba(17, 17, 17, 0.57); /*Color de fondo de la "telilla transparentosa" del div.*/
+}
+
+header 
+{ /*Estilo del header.*/
+    text-decoration: none; /*Quita el subrayado de los links del header, de la parte superior.*/
+    text-align: center; /*Alinea el texto del header.*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    padding-bottom: 2%;
+    z-index: 10;
+}
+
+h1 
+{ /*Estilo del título h1.*/
+    border: 2px solid; /*Establece los bordes del título de la página.*/
+    margin: 5px; /*Establece el margen del título.*/
+    background-color: transparent; /*Establece la transparencia del título.*/
+    border-color: white; /*Establece el color del borde del título.*/
+    color: gold; /*Establece el color del texto del título de la página.*/
+    font-family: PressStart2P; /*Establece la fuente del texto del título.*/
+    font-weight: bold; /*Establece el texto del título de la página en negrilla*/
+    transition-duration: 0.5s; /*Cuando se hace el hover hace que el hover se desvanezca en medio segundo.*/
+}
+
+h1:hover
+{
+    color: red; /*Establece el color del título cuando se pasa el mouse por el título.*/
+}
+
+label, #hamburger
+{
+    display: none; /*Oculta el icóno de "hamburguesa" para el menú de pantallas medianas y pequeñas."*/
+}
+
+.index_contents
+{
+    margin-left: 2%; /*Corre los títulos del menú de navegación de la página (no del documento entero) a la derecha para que no se pegue al fondo.*/
+}
+
+.button 
+{ /*Estilo de los bótones*/
+    color: gold; /*Establece el color del texto del bóton.*/
+    font-size: 24px; /*Establece el tamaño de la fuente del bóton.*/
+    background-color: transparent; /*Establece la transparencia del bóton.*/
+    padding-left: 10px; /*Establece la separación del bóton respecto de la izquierda.*/
+    padding-right: 10px; /*Establece la separación del bóton respecto de la derecha.*/
+    padding-top: 10px; /*Establece la separación del bóton respecto a arriba.*/
+    padding-bottom: 10px; /*Establece la separación del bóton respecto abajo.*/
+    border: 2px solid; /*Establece el estilo del borde del bóton.*/
+    border-color: white; /*Establece el color del borde.*/
+    font-family: PressStart2P; /*Establece la fuente del texto del bóton.*/
+    font-weight: bold; /*Estabece el texto del bóton en negrilla.*/
+    cursor: pointer; /*Establece que cuando se pone el mouse encima del bóton se ponga la manito que especifica que es un hipervínculo*/
+    transition-duration: 0.5s; /*Cuando se hace el hover hace que el hover se desvanezca en medio segundo.*/
+}
+
+.button:hover
+{
+    color: red; /*Establece el color del título cuando se pasa el mouse por el bóton.*/
+}
+
+a 
+{
+    text-decoration: none; /*Quita el subrayado de todos los vínculos.*/
+    transition-duration: 0.5s; /*Cuando se hace el hover hace que el hover se desvanezca en medio segundo.*/
+}
+
+a:hover
+{
+    color: red; /*Establece el color del título cuando se pasa el mouse por el hipervínculo.*/
+}
+
+.dummy_spacer
+{ /*Permite que haya un espacio entre el menú de navegación y el primer título h2.*/
+    margin-top: 120pt;
+}
+
+#index_img 
+{ /*Cambia el tamaño de la imágen del index.*/
+    width: 25%;
+    height: 25%;
+}
+
+.other_img 
+{ /*Cambia el tamaño de la imágen de las imagenes con la clase other_img*/
+    width: 40%;
+    height: 40%;
+}
+
+#chrono_img 
+{ /*Cambia el tamaño de la primera imágen de la sección historia.html*/
+    width: 75%;
+    height: 75%;
+}
+
+#credits_img 
+{ /*Cambia el tamaño de la imágen de la sección creditos.html*/
+    width: 50%;
+    height: 50%;
+}
+
+.site_and_sketch
+{ /*Pone el tamaño de la imágenes del mapa de navegación y los bocetos.*/
+    width: 80%;
+    height: 80%;
+}
+
+ul 
+{ /*Cambia el estilo de las ul.*/
+    color: gold;
+    text-align: justify;
+    font-family: Galaxy1; 
+}
+
+.credits_list, .internal_list 
+{ /*Cambia el color de todos los hipervínculos externos.*/
+    color: #FA26A0;
+    transition-duration: 0.5s;
+}
+
+.credits_list:hover, .internal_list:hover 
+{ /*Cambia el color cuando pasa el mouse a los hipervínculos externos.*/
+    color: red;
+}
+
+.page_index
+{ /*Estilos para el contenedor del menú de navegación interno.*/
+    background-color: black;
+    border: solid;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.internal_nav
+{ /*Estilos para la lista que es el menú de navegación interno.*/
+    width: fit-content;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.column
+{ /*Pone las imágenes de la sección historia a la izquierda, para que simule dos columnas.*/
+    float: left;
+    width: 50%;
+}
+
+.hide
+{ /*Estilos para el div que mostrará la información del mapa interactivo*/
+    background-color: #FA26A0;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 5px solid #FA26A0;
+    font-size: 16px;
+}
+
+.click-to-close-txt
+{ /*Muestra el texto que le indica al usuario como cerrar el recuadro de texto del mapa interactivo.*/
+    color: white;
+    font-style: italic;
+}
+
+.map-labels
+{ /*Muestra nombres de planetas del mapa interactivo en el SVG.*/
+    font-family: PressStart2P;
+    font-size: 10px;
+    fill: gold;
+}
+
+.tatooine-txt, .coruscant-txt, .naboo-txt, .kashyyyk-txt, .geonosis-txt, .mustafar-txt, .hoth-txt, .endor-txt, .yavin-txt, .kamino-txt
+{ /*Alinea el recuadro de texto de cada elemento del mapa interactivo an el SVG.*/
+    top: 300pt;
+    left: 200pt;
+    max-width: 400px;
+    z-index: 5;
+}
+
+.tatooine-img, .coruscant-img, .naboo-img, .kashyyyk-img, .geonosis-img, .mustafar-img, .hoth-img, .endor-img, .yavin-img, .kamino-img
+{ /*Alinea el recuadro de imagen de cada elemento del mapa interactivo an el SVG.*/
+    top: 350pt;
+    left: 550pt;
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    z-index: 5;
+}
+
+p 
+{ /*Pone el color, alineación de texto y fuente a los parrafos.*/
+    color: gold;
+    text-align: justify;
+    font-family: Galaxy1;
+}
+
+figure 
+{ /*Pone el color, alineación de texto y fuente a los pies de foto.*/
+    color: gold;
+    text-align: center;
+    font-family: Galaxy1;
+}
+
+img, svg
+{ /*Pone el borde y el color del borde de toda imágen.*/
+    border-style: double;
+    border-color: white;
+}
+
+.svg-container 
+{ /*Permite que el contenedor del SVG sea responsive*/
+	display: inline-block;
+	position: relative;
+	width: 90%;
+	padding-bottom: 60%; 
+	vertical-align: middle; 
+	overflow: hidden; 
+}
+
+.svg-content 
+{  /*Permite que el SVG sea responsive. En conjunción con lo anterior.*/
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#footer 
+{ /*Pone el estilo del footer*/
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    padding: 1%;
+    text-align: center;
+    font-family: PressStart2P;
+}
+
+@media screen and (max-width: 1200px)
+{
+    label 
+    { /*Estilo para el simbolo de 3 lineas, o para el menú estilo "haurguesa".*/
+        display: inline-block; 
+        color: white;
+        font-size: 24px;
+        padding-bottom: 2%;
+    }
+
+    .button
+    { /*Estilo para los botones del menú de navegación para que estos estén ocultos y desplegados en vertical.*/
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        display: none;
+    }
+
+    input
+    { /*Hace que el checkbox que determina el despliegue del menú no se muestre, incluso cuando se haga clic, ya que esto se usa solo para validación.*/
+        display: none;
+    }
+
+    input:checked ~ .button
+    { /*Muestra los botones del menú cuando se hace click en el icóno de "hamburguesa".*/
+        display: block;
+    }
+
+    #chrono_img 
+    { /*Cambia el tamaño de la primera imágen de la sección historia.html, pero la hace más grande para que armonice con el contenido*/
+    width: 90%;
+    height: 90%;
+    }
+
+    .other_img
+    { /*Hace las imagenes más grandes en pantallas pequeñas para que no se "pierdan"*/
+        width: 60%;
+        height: 60%;
+    }
+
+    #credits_img 
+    { /*Cambia el tamaño de la imágen de la sección creditos.html*/
+        width: 90%;
+        height: 90%;
+    }
+
+    .content
+    { /*Achica el margen de los parrafos y los centra para que armonicen con la telilla del fondo*/
+        max-width: 95%;
+        margin: auto;
+    }
+
+    h2, h3
+    { /*Al igual que los parrafos de contenido, se achica el margen de los títulos y se centran. Además, se agrega un margen encima y debajo para que haya separación con los parrafos superiores.*/
+        max-width: 95%;
+        margin: auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .hide
+    { /*Hace el texto más pequeño para dispositivos de máximo 1200px de largo.*/
+        font-size: 13px;
+    }
+
+    .tatooine-txt, .coruscant-txt, .naboo-txt, .kashyyyk-txt, .geonosis-txt, .mustafar-txt, .hoth-txt, .endor-txt, .yavin-txt, .kamino-txt
+    { /*Alinea el recuadro de texto de cada elemento del mapa interactivo an el SVG.*/
+        top: 250pt;
+        left: 75pt;
+        max-width: 300px;
+    }
+
+    .tatooine-img, .coruscant-img, .naboo-img, .kashyyyk-img, .geonosis-img, .mustafar-img, .hoth-img, .endor-img, .yavin-img, .kamino-img
+    { /*Alinea el recuadro de imagen de cada elemento del mapa interactivo an el SVG.*/
+        top: 250pt;
+        left: 325pt;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{    
+    label 
+    { /*Estilo para el simbolo de 3 lineas, o para el menú estilo "haurguesa".*/
+        display: inline-block; 
+        color: white;
+        font-size: 24px;
+        padding-bottom: 2%;
+    }
+
+    .button
+    { /*Estilo para los botones del menú de navegación para que estos estén ocultos y desplegados en vertical.*/
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        display: none;
+    }
+
+    input
+    { /*Hace que el checkbox que determina el despliegue del menú no se muestre, incluso cuando se haga clic, ya que esto se usa solo para validación.*/
+        display: none;
+    }
+
+    input:checked ~ .button
+    { /*Muestra los botones del menú cuando se hace click en el icóno de "hamburguesa".*/
+        display: block;
+    }
+
+    h1 
+    { /*Hace el tamaño de la fuente del título de la página un poco más pequeño para que no se salga de la caja.*/
+        font-size: x-large;
+    }
+
+    #chrono_img 
+    { /*Cambia el tamaño de la primera imágen de la sección historia.html, pero la hace más grande para que armonice con el contenido*/
+    width: 90%;
+    height: 90%;
+    }
+
+    .other_img
+    { /*Hace las imagenes más grandes en pantallas pequeñas para que no se "pierdan"*/
+        width: 60%;
+        height: 60%;
+    }
+
+    #credits_img 
+    { /*Cambia el tamaño de la imágen de la sección creditos.html*/
+        width: 90%;
+        height: 90%;
+    }
+
+    .site_and_sketch
+    { /*Agranda las imágenes del mapa de navegación y el boceto para que no quede muy pequeño en dispositivos pequeños.*/
+        width: 100%;
+        height: 100%;
+    }
+
+    .column
+    { /*Quita el float de imagenes para que queden en linea y el texto debajo*/
+        float: none;
+        width: auto;
+    }
+
+    .content
+    { /*Achica el margen de los parrafos y los centra para que armonicen con la telilla del fondo*/
+        max-width: 95%;
+        margin: auto;
+    }
+
+    h2, h3
+    { /*Al igual que los parrafos de contenido, se achica el margen de los títulos y se centran. Además, se agrega un margen encima y debajo para que haya separación con los parrafos superiores.*/
+        max-width: 95%;
+        margin: auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .hide
+    { /*Hace el texto más pequeño para dispositivos de máximo 800px de largo.*/
+        font-size: 10px;
+    }
+
+    .tatooine-txt, .coruscant-txt, .naboo-txt, .kashyyyk-txt, .geonosis-txt, .mustafar-txt, .hoth-txt, .endor-txt, .yavin-txt, .kamino-txt
+    { /*Alinea el recuadro de texto de cada elemento del mapa interactivo an el SVG.*/
+        top: 210pt;
+        left: 50pt;
+        max-width: 200px;
+    }
+
+    .tatooine-img, .coruscant-img, .naboo-img, .kashyyyk-img, .geonosis-img, .mustafar-img, .hoth-img, .endor-img, .yavin-img, .kamino-img
+    { /*Alinea el recuadro de imagen de cada elemento del mapa interactivo an el SVG.*/
+        top: 210pt;
+        left: 210pt;
+        max-width: 200px;
+    }
+}

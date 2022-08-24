@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!--Especifica al navegador que este documento está escrito en HTML 5.-->
+<html lang="es"> <!--Especifica el idioma de la página web, en este caso, español.-->
+<head>
+    <meta charset="UTF-8"> <!--Especifica la codificación de la página, nos servirá para poder incluir caracteres del idioma, como tildes, por ejemplo.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adapta la página a diferentes tipos de pantalla.-->
+    <meta name="author" content="Carlos Arturo Murcia Andrade"> <!--Metadato, especifica el nombre del autor.-->
+    <link href="styles.css" rel="stylesheet" type="text/css"> <!--Enlace a los estilos CSS.-->
+    <link href="images\star_wars_index_icon.png" rel="icon"> <!--Enlace al ícono de la página web.-->
+    <title>Star Wars Interactivo: Info sobre una galaxia muy, muy lejana.</title> <!--Titulo de la página web.-->
+</head>
+<body>
+    <div>
+        <header> <!--Sección que encapsula el encabezado. En pocas palabras, el título y la barra de navegación.-->
+            <a href="index.html" target="_self"><h1>Star Wars Interactivo: <br> Info sobre una galaxia muy, muy lejana.</h1></a><br> <!--Titulo de la página web, visible para el usuario.-->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <a href="ubicacion.html" target="_self" class="button">Ubicación</a>
+            <a href="personajes.html" target="_self" class="button">Personajes</a>
+            <a href="actividades.html" target="_self" class="button">Actividades</a>
+            <a href="historia.html" target="_self" class="button">Historia</a>
+            <a href="mapainteractivo.html" target="_self" class="button">Mapa</a>
+        </header>
+        <main> <!--Encapsula el contenido principal del index-->
+            <h2 class="dummy_spacer">Bienvenido/a a esta galaxia muy, muy lejana.</h2> <!--Subtitulo h2.-->
+            <figure> <!--Figura principal del index.-->
+                <img src="images\index_image.png" alt="Star Wars" id="index_img">
+                <figcaption>Animación de Genndy Tartakovsky</figcaption>
+            </figure>            
+            <p class="content"> <!--Parrafo que resume el index.-->
+                Si deseas ver de lo que trata el universo de Star Wars, has llegado al lugar correcto.
+                Aqui encontraras un breve vistazo sobre esta enorme galaxia muy, muy lejana.
+                Verás información sobre su ubicación, sus personajes, sus actividades y un poco de su historia.
+            </p>
+            <p class="content">
+                Algunos enlaces de interés:
+                <ul>
+                    <li><a href="https://starwars.com/" target="_blank" class="credits_list">Página principal de Star Wars</a>.</li>
+                    <li><a href="https://starwars.fandom.com/" target="_blank" class="credits_list">Página principal de Wookiepedia</a> (la wiki de Star Wars).</li>
+                </ul>
+            </p>
+            <p class="content">
+                Canales de YouTube sobre Star Wars recomendados por el autor:
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCvHdYD2Qchr9RFJTgIPIuDw" target="_blank" class="credits_list">Generation Tech</a>.</li>
+                    <li><a href="https://www.youtube.com/channel/UC8CbFnDTYkiVweaz8y9wd_Q" target="_blank" class="credits_list">Star Wars Theory</a>.</li>
+                    <li><a href="https://www.youtube.com/channel/UCdIt7cmllmxBK1-rQdu87Gg" target="_blank" class="credits_list">The Stupendous Wave</a>.</li>
+                </ul>
+            </p>
+        </main>
+        <footer> <!--Muestra los datos del creador y enlaza a los creditos.-->
+            <p id="footer">
+                © Carlos Arturo Murcia Andrade - Universidad Nacional de Colombia - 2021
+                <br>
+                Contacto: 
+                <a href="mailto:camurcioa@unal.edu.co" target="_blank" class="credits_list">Email</a> / 
+                <a href="https://wa.me/573124308915" target="_blank" class="credits_list">WhatsApp</a>            
+                <br>
+                <a href="creditos.html" target="_self" class="credits_list">Créditos</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
